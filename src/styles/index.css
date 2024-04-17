@@ -1,0 +1,128 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+	"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+	"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 100%;
+	overflow-x: hidden;
+	background-color: black;
+}
+
+:root {
+	--color-yellow: #edb935;
+	--max-width: 1420px;
+}
+
+textarea,
+input::placeholder {
+	color: #fff;
+}
+ 
+textarea:-ms-input-placeholder {
+	color: #fff;
+}
+
+textarea::-webkit-input-placeholder {
+	color: #fff;
+}
+
+textarea:-moz-placeholder {
+	/* Firefox 18- */
+	color: #fff;
+}
+
+textarea::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #fff;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+	monospace;
+}
+
+.model {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000be;
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	overflow: hidden;
+	z-index: 999;
+	transition: opacity 0.4s ease, visibility 0.4s ease,
+	transform 0.5s ease-in-out;
+	-webkit-transition: opacity 0.4s ease, visibility 0.4s ease,
+	transform 0.5s ease-in-out;
+	-moz-transition: opacity 0.4s ease, visibility 0.4s ease,
+	transform 0.5s ease-in-out;
+	-ms-transition: opacity 0.4s ease, visibility 0.4s ease,
+	transform 0.5s ease-in-out;
+	-o-transition: opacity 0.4s ease, visibility 0.4s ease,
+	transform 0.5s ease-in-out;
+}
+
+.model.open {
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+}
+
+.model .img {
+	width: 50%;
+}
+
+.darkCalendar {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.Mui-selected {
+	background: #edb935 !important;
+	color: #000 !important;
+}
+
+.MuiTypography-root.MuiTypography-h3.PrivatePickersToolbarText-root.Mui-selected {
+	background: initial !important;
+	color: #edb935 !important;
+}
+
+.MuiTypography-root.MuiTypography-h3.PrivatePickersToolbarText-root {
+	color: #000000;
+}
+
+.MuiTypography-root.MuiTypography-subtitle2.MuiTimePickerToolbar-ampmLabel.PrivatePickersToolbarText-root.Mui-selected {
+	background: initial !important;
+	color: #edb935 !important;
+}
+
+.MuiTypography-root.MuiTypography-subtitle2.MuiTimePickerToolbar-ampmLabel.PrivatePickersToolbarText-root {
+	color: #000000;
+}
+
+.MuiPickerStaticWrapper-content {
+	min-width: 200px !important;
+}
+
+.MuiClockPicker-root {
+	width: calc(300px) !important;
+}
+
+.css-epd502 {
+	width: calc(320px) !important;
+}
